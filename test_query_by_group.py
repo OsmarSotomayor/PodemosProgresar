@@ -1,5 +1,4 @@
 import time
-
 from appium import webdriver
 from appium.webdriver.common.appiumby import AppiumBy
 from appium.webdriver.common.touch_action import TouchAction
@@ -82,14 +81,14 @@ time.sleep(3)
 selectGroup = init_element(AppiumBy.XPATH, "(//android.widget.Button[@content-desc=\"Utilizar\"])[1]")
 selectGroup.click()
 
-addMenber = init_element(AppiumBy.XPATH, "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[4]")
-addMenber.click()
+addMember = init_element(AppiumBy.XPATH, "//android.widget.FrameLayout[@resource-id=\"android:id/content\"]/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[4]")
+addMember.click()
 
 newProspect = init_element(AppiumBy.ACCESSIBILITY_ID, "Nuevo prospecto")
 newProspect.click()
 
-manualy = init_element(AppiumBy.ACCESSIBILITY_ID, "RECOMENDADO\nManualmente\nLlena la información de\nforma manual")
-manualy.click()
+manually = init_element(AppiumBy.ACCESSIBILITY_ID, "RECOMENDADO\nManualmente\nLlena la información de\nforma manual")
+manually.click()
 
 
 textboxCURP = init_element(AppiumBy.XPATH,
