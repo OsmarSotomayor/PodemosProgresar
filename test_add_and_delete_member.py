@@ -103,9 +103,22 @@ time.sleep(2)
 
 member = "06 Nov\nLOURDES  PEREZ TALAVERA \nRECHAZADO"
 member2 = "06 Nov\nMARIBEL  MEDINA JUAREZ \nRECHAZADO"
+
 selectMember = init_element(AppiumBy.ACCESSIBILITY_ID, member2)
 selectMember.click()
 time.sleep(5)
 
+selectMemberToDelete = init_element(AppiumBy.XPATH, "//android.view.View[@content-desc=\"MARIBEL MEDINA JUAREZ\nRECHAZADO\"]/android.widget.Button")
+selectMemberToDelete.click()
+
+deleteMember = init_element(AppiumBy.ACCESSIBILITY_ID, "Sacar del grupo")
+deleteMember.click()
+time.sleep(3)
+
+acceptDelete = init_element(AppiumBy.ACCESSIBILITY_ID, "Aceptar")
+acceptDelete.click()
+time.sleep(3)
+
+#comebackMainMenu = init_element(AppiumBy.ACCESSIBILITY_ID, "Volver al inicio")
 
 
