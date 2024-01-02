@@ -55,6 +55,8 @@ def scroll_screen(start_x, start_y, end_x, end_y):
 buttonGetAccess = init_element(AppiumBy.ID, 'com.android.permissioncontroller:id/permission_allow_button')
 buttonGetAccess.click()
 
+
+
 time.sleep(15)
 
 buttonInitSessionGoogle = init_element(AppiumBy.XPATH,
